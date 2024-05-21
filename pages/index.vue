@@ -5,9 +5,19 @@ definePageMeta({
 
 const route = useRoute();
 
-console.log(route.meta.title);
+const text = ref<number>();
+
+onMounted(() => {
+  text.value = randomEntry([1, 2, 3, 4, 5, 6, 7]);
+
+  console.log(route.meta.title);
+});
 </script>
 
 <template>
-  <h1>首页</h1>
+  <div>
+    <h1>首页</h1>
+    {{ text }}
+    {{ formatNumber(444444) }}
+  </div>
 </template>

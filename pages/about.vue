@@ -1,9 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <NuxtLayout>
-    <NuxtPage />
-  </NuxtLayout>
+  <div>Page: about<NuxtLink to="/">首页</NuxtLink></div>
 </template>
 
 <style scoped></style>
