@@ -33,5 +33,8 @@ onMounted(() => {
     <div>
       {{ formatNumber(444444) }}
     </div>
+    <div>
+      <ContentDoc path="/" />
+    </div>
   </div>
 </template>
