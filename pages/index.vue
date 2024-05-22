@@ -14,9 +14,14 @@ const result = await $fetch<{ body: { test: number } }>("/api/submit", {
   body: { test: 123 },
 });
 
+const foo = useFoo();
+
+const bar = useBar();
+
 onMounted(() => {
   text.value = randomEntry([1, 2, 3, 4, 5, 6, 7]);
 
+  console.log(foo.value.globalName, bar.value);
   console.log(route.meta.title, result);
 });
 </script>
